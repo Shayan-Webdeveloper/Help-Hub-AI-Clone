@@ -3,12 +3,13 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>HelpHub AI | Onboarding</title>
+     <title>HelpHub AI | Messaging</title>
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
           rel="stylesheet">
      <link rel="stylesheet" href="../style.css">
+     <script defer="" src="assets/app.js"></script>
      <style>
           ._button_10caf_25 {
                border-radius: 8px;
@@ -679,54 +680,55 @@
      </style>
 </head>
 
-<body data-page="onboarding" cz-shortcut-listen="true">
-     <header class="header">
+<body data-page="messages" cz-shortcut-listen="true">
+     <header class="topbar">
           <div class="container nav">
-               <a class="brand" href="#"><span class="brand-logo">H</span><span>HelpHub AI</span></a>
-               <nav class="nav-links"><a href="./dashboard.html">Dashboard</a><a href="./explore.html">Explore</a><a
-                         href="./profile.html">Profile</a></nav>
+               <a class="brand" href="/"><span class="brand-badge">H</span><span>HelpHub AI</span></a>
+               <nav class="nav-links"><a href="/dashboard">Dashboard</a><a href="/explore">Explore</a><a
+                         data-nav="messages" href="/messages" class="active">Messages</a></nav>
           </div>
      </header>
      <main class="container">
-          <section class="hero-page">
-               <div class="area">
-                    <p class="coding">Onboarding</p>
-                    <h1 style="font-size: clamp(2.2rem, 4vw, 4rem);">Shape your support identity with AI suggestions.
+          <section class="page-hero">
+               <div class="panel">
+                    <p class="eyebrow">Interaction / Messaging</p>
+                    <h1 style="font-size: clamp(2.2rem, 4vw, 4rem);">Keep support moving through direct communication.
                     </h1>
-                    <p>Name your strengths, interests, and location so the system can recommend where you can help and
-                         where you may need backup.</p>
+                    <p>Basic messaging gives helpers and requesters a clear follow-up path once a match happens.</p>
                </div>
           </section>
-          <section class="two-col section">
-               <form class="form-card cards" data-onboarding-form="">
-                    <div class="field"><label>Switch demo user</label><select data-user-switch="">
-                              <option value="user-1">Ayesha Khan</option>
-                              <option value="user-2">Hassan Ali</option>
-                              <option value="user-3">Sara Noor</option>
+          <section class="detail-grid section">
+               <div class="panel">
+                    <p class="section-kicker">Conversation stream</p>
+                    <h2>Recent messages</h2>
+                    <div class="message-list" data-message-list="">
+                         <div class="message-item">
+                              <div><strong>Ayesha Khan → Sara Noor</strong>
+                                   <p>I checked your portfolio request. Share the breakpoint screenshots and I can
+                                        suggest fixes.</p>
+                              </div><span class="tag">09:45 AM</span>
+                         </div>
+                         <div class="message-item">
+                              <div><strong>Hassan Ali → Ayesha Khan</strong>
+                                   <p>Your event poster concept is solid. I would tighten the CTA and reduce the
+                                        background texture.</p>
+                              </div><span class="tag">11:10 AM</span>
+                         </div>
+                    </div>
+               </div>
+               <form class="form-card stack" data-message-form="">
+                    <p class="section-kicker">Send message</p>
+                    <h2>Start a conversation</h2>
+                    <div class="field"><label>To</label><select name="to">
+                              <option>Ayesha Khan</option>
+                              <option>Hassan Ali</option>
+                              <option>Sara Noor</option>
                          </select></div>
-                    <div class="form-grid">
-                         <div class="field"><label>Name</label><input name="name" type="text"></div>
-                         <div class="field"><label>Location</label><input name="location" type="text"></div>
-                         <div class="field-full"><label>Skills</label><input name="skills" type="text"
-                                   placeholder="JavaScript, UI/UX, Public Speaking"></div>
-                         <div class="field-full"><label>Interests</label><input name="interests" type="text"
-                                   placeholder="Hackathons, mentoring, startups"></div>
+                    <div class="field"><label>Message</label><textarea name="text"
+                              placeholder="Share support details, ask for files, or suggest next steps."></textarea>
                     </div>
-                    <button class="btn btn-primary" type="submit">Save onboarding</button>
+                    <button class="btn btn-primary" type="submit">Send</button>
                </form>
-               <aside class="area cards">
-                    <div>
-                         <p class="core">AI suggestions</p>
-                         <h2>Your likely contribution map</h2>
-                    </div>
-                    <div data-onboarding-ai="">
-                         <div class="metric"><span>You can likely help with</span><strong>HTML/CSS, UI/UX, Career
-                                   Guidance, Figma</strong></div>
-                         <div class="metric"><span>You may want support in</span><strong>JavaScript, React, Node.js,
-                                   Python</strong></div>
-                         <div class="metric"><span>Suggested role fit</span><strong>Both</strong></div>
-                    </div>
-               </aside>
           </section>
      </main>
 

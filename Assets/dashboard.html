@@ -681,24 +681,24 @@
 
 <body data-page="dashboard" cz-shortcut-listen="true">
      <div class="site-shell">
-          <header class="topbar">
+          <header class="header">
                <div class="container nav">
-                    <a class="brand" href="#"><span class="brand-badge">H</span><span>HelpHub AI</span></a>
+                    <a class="brand" href="#"><span class="brand-logo">H</span><span>HelpHub AI</span></a>
                     <nav class="nav-links">
-                         <a data-nav="dashboard" href="./dashboard.html" class="active">Dashboard</a>
+                         <a data-nav="dashboard" href="#" class="active">Dashboard</a>
                          <a href="./Explore.html">Explore</a>
-                         <a href="./CreateRequest.html">Create Request</a>
-                         <a href="./Messages.html">Messages</a>
+                         <a href="./create-requests.html">Create Request</a>
+                         <a href="./messages.html">Messages</a>
                          <a href="./Profile.html">Profile</a>
                     </nav>
-                    <div class="nav-actions"><a class="pill" href="./Notifications.html">Notifications</a><a
+                    <div class="nav-actions"><a class="community" href="./Notifications.html">Notifications</a><a
                               class="btn btn-primary" href="./AICenter.html">Open AI Center</a></div>
                </div>
           </header>
           <main class="container">
                <section class="page-hero">
-                    <div class="panel">
-                         <p class="eyebrow">Dashboard</p>
+                    <div class="area">
+                         <p class="coding">Dashboard</p>
                          <h1 style="font-size: clamp(2.3rem, 4vw, 4.2rem);">Welcome back, <span
                                    data-dashboard-name="">Ayesha Khan</span>.</h1>
                          <p>Your command center for requests, AI insights, helper momentum, and live community activity.
@@ -706,40 +706,40 @@
                     </div>
                </section>
                <section class="mini-grid section">
-                    <div class="stat-card">
-                         <p class="eyebrow">Trust score</p>
-                         <div class="stat-value" data-stat-trust="">92%</div>
+                    <div class="analytics-card">
+                         <p class="coding">Trust score</p>
+                         <div class="analytics-value" data-stat-trust="">92%</div>
                          <p>Driven by solved requests and consistent support.</p>
                     </div>
-                    <div class="stat-card">
-                         <p class="eyebrow">Helping</p>
-                         <div class="stat-value" data-stat-helping="">2</div>
+                    <div class="analytics-card">
+                         <p class="coding">Helping</p>
+                         <div class="analytics-value" data-stat-helping="">2</div>
                          <p>Requests where you are currently listed as a helper.</p>
                     </div>
-                    <div class="stat-card">
-                         <p class="eyebrow">Open requests</p>
-                         <div class="stat-value" data-stat-open="">2</div>
+                    <div class="analytics-card">
+                         <p class="coding">Open requests</p>
+                         <div class="analytics-value" data-stat-open="">2</div>
                          <p>Community requests currently active across the feed.</p>
                     </div>
-                    <div class="stat-card">
-                         <p class="eyebrow">AI pulse</p>
-                         <div class="stat-value" data-stat-insights="">1 trends</div>
+                    <div class="analytics-card">
+                         <p class="coding">AI pulse</p>
+                         <div class="analytics-value" data-stat-insights="">1 trends</div>
                          <p>Trend count detected in the latest request activity.</p>
                     </div>
                </section>
                <section class="dashboard-grid section">
-                    <div class="stack">
+                    <div class="cards">
                          <div class="section-head">
                               <div>
-                                   <p class="section-kicker">Recent requests</p>
+                                   <p class="core">Recent requests</p>
                                    <h2>What the community needs right now</h2>
                               </div><a class="btn btn-secondary" href="./Explore.html">Go to feed</a>
                          </div>
-                         <div class="stack" data-dashboard-requests="">
-                              <article class="request-card fade-in">
-                                   <div class="card-meta">
+                         <div class="cards" data-dashboard-requests="">
+                              <article class="card-request fade-in">
+                                   <div class="card-somedetails">
                                         <span class="tag">Web Development</span>
-                                        <span class="tag urgent">High</span>
+                                        <span class="tag red">High</span>
                                         <span class="tag ">Open</span>
                                    </div>
                                    <h3>Need help making my portfolio responsive before demo day</h3>
@@ -757,8 +757,8 @@
                                    </div>
                               </article>
 
-                              <article class="request-card fade-in">
-                                   <div class="card-meta">
+                              <article class="card-request fade-in">
+                                   <div class="card-somedetails">
                                         <span class="tag">Design</span>
                                         <span class="tag ">Medium</span>
                                         <span class="tag ">Open</span>
@@ -778,11 +778,11 @@
                                    </div>
                               </article>
 
-                              <article class="request-card fade-in">
-                                   <div class="card-meta">
+                              <article class="card-request fade-in">
+                                   <div class="card-somedetails">
                                         <span class="tag">Career</span>
                                         <span class="tag ">Low</span>
-                                        <span class="tag success">Solved</span>
+                                        <span class="tag green">Solved</span>
                                    </div>
                                    <h3>Need mock interview support for internship applications</h3>
                                    <p>Applying to frontend internships and need someone to practice behavioral and
@@ -800,9 +800,9 @@
                               </article>
                          </div>
                     </div>
-                    <div class="stack">
-                         <div class="panel">
-                              <p class="section-kicker">AI insights</p>
+                    <div class="cards">
+                         <div class="area">
+                              <p class="core">AI insights</p>
                               <h3>Suggested actions for you</h3>
                               <div data-dashboard-ai="">
                                    <div class="metric"><span>Most requested category</span><strong>Web
@@ -814,20 +814,20 @@
                                    <div class="metric"><span>Your active requests</span><strong>1</strong></div>
                               </div>
                          </div>
-                         <div class="panel">
-                              <p class="section-kicker">Notifications</p>
+                         <div class="area">
+                              <p class="core">Notifications</p>
                               <h3>Latest updates</h3>
                               <div class="notif-list" data-dashboard-notes="">
                                    <div class="notif-item">
                                         <div><strong>New helper matched to your responsive portfolio request</strong>
                                              <p>Match • 12 min ago</p>
-                                        </div><span class="tag urgent">Unread</span>
+                                        </div><span class="tag red">Unread</span>
                                    </div>
 
                                    <div class="notif-item">
                                         <div><strong>Your trust score increased after a solved request</strong>
                                              <p>Reputation • 1 hr ago</p>
-                                        </div><span class="tag urgent">Unread</span>
+                                        </div><span class="tag red">Unread</span>
                                    </div>
 
                                    <div class="notif-item">
