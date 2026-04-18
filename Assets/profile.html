@@ -3,7 +3,7 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>HelpHub AI | Dashboard</title>
+     <title>HelpHub AI | Profile</title>
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
@@ -679,168 +679,57 @@
      </style>
 </head>
 
-<body data-page="dashboard" cz-shortcut-listen="true">
-     <div class="site-shell">
-          <header class="header">
-               <div class="container nav">
-                    <a class="brand" href="#"><span class="brand-logo">H</span><span>HelpHub AI</span></a>
-                    <nav class="nav-links">
-                         <a data-nav="dashboard" href="#" class="active">Dashboard</a>
-                         <a href="./Explore.html">Explore</a>
-                         <a href="./create-requests.html">Create Request</a>
-                         <a href="./messages.html">Messages</a>
-                         <a href="./profile.html">Profile</a>
-                    </nav>
-                    <div class="nav-actions"><a class="community" href="./Notifications.html">Notifications</a><a
-                              class="btn btn-primary" href="./AI-center.html">Open AI Center</a></div>
+<body data-page="profile" cz-shortcut-listen="true">
+     <header class="header">
+          <div class="container nav">
+               <a class="brand" href="#"><span class="brand-logo">H</span><span>HelpHub AI</span></a>
+               <nav class="nav-links"><a href="./dashboard.html">Dashboard</a><a href="./onboarding.html">Onboarding</a><a
+                         data-nav="profile" href="./profile.html" class="active">Profile</a></nav>
+          </div>
+     </header>
+     <main class="container">
+          <section class="hero-page">
+               <div class="area">
+                    <p class="coding">Profile</p>
+                    <h1 style="font-size: clamp(2.2rem, 4vw, 4rem);" data-profile-name="">Ayesha Khan</h1>
+                    <p><span data-profile-role="">Both</span> • <span data-profile-location="">Karachi</span></p>
                </div>
-          </header>
-          <main class="container">
-               <section class="page-hero">
+          </section>
+          <section class="profile-grid section">
+               <div class="cards">
                     <div class="area">
-                         <p class="coding">Dashboard</p>
-                         <h1 style="font-size: clamp(2.3rem, 4vw, 4.2rem);">Welcome back, <span
-                                   data-dashboard-name="">Ayesha Khan</span>.</h1>
-                         <p>Your command center for requests, AI insights, helper momentum, and live community activity.
-                         </p>
-                    </div>
-               </section>
-               <section class="mini-grid section">
-                    <div class="analytics-card">
-                         <p class="coding">Trust score</p>
-                         <div class="analytics-value" data-stat-trust="">92%</div>
-                         <p>Driven by solved requests and consistent support.</p>
-                    </div>
-                    <div class="analytics-card">
-                         <p class="coding">Helping</p>
-                         <div class="analytics-value" data-stat-helping="">2</div>
-                         <p>Requests where you are currently listed as a helper.</p>
-                    </div>
-                    <div class="analytics-card">
-                         <p class="coding">Open requests</p>
-                         <div class="analytics-value" data-stat-open="">2</div>
-                         <p>Community requests currently active across the feed.</p>
-                    </div>
-                    <div class="analytics-card">
-                         <p class="coding">AI pulse</p>
-                         <div class="analytics-value" data-stat-insights="">1 trends</div>
-                         <p>Trend count detected in the latest request activity.</p>
-                    </div>
-               </section>
-               <section class="dashboard-grid section">
-                    <div class="cards">
-                         <div class="section-head">
-                              <div>
-                                   <p class="core">Recent requests</p>
-                                   <h2>What the community needs right now</h2>
-                              </div><a class="btn btn-secondary" href="./Explore.html">Go to feed</a>
+                         <p class="core">Public profile</p>
+                         <h2>Skills and reputation</h2>
+                         <div class="metric"><span>Trust score</span><strong data-profile-trust="">92%</strong></div>
+                         <div class="metric"><span>Contributions</span><strong data-profile-contributions="">31</strong>
                          </div>
-                         <div class="cards" data-dashboard-requests="">
-                              <article class="card-request fade-in">
-                                   <div class="card-somedetails">
-                                        <span class="tag">Web Development</span>
-                                        <span class="tag red">High</span>
-                                        <span class="tag ">Open</span>
-                                   </div>
-                                   <h3>Need help making my portfolio responsive before demo day</h3>
-                                   <p>My HTML/CSS portfolio breaks on tablets and I need layout guidance before tomorrow
-                                        evening.</p>
-                                   <div class="tag-row"><span class="tag">HTML/CSS</span><span
-                                             class="tag">Responsive</span><span class="tag">Portfolio</span></div>
-                                   <div class="list-item" style="padding-bottom:0;border-bottom:0;">
-                                        <div>
-                                             <strong>Sara Noor</strong>
-                                             <p>Karachi • 1 helper interested</p>
-                                        </div>
-                                        <a class="btn btn-secondary" href="./request-1.html">Open
-                                             details</a>
-                                   </div>
-                              </article>
-
-                              <article class="card-request fade-in">
-                                   <div class="card-somedetails">
-                                        <span class="tag">Design</span>
-                                        <span class="tag ">Medium</span>
-                                        <span class="tag ">Open</span>
-                                   </div>
-                                   <h3>Looking for Figma feedback on a volunteer event poster</h3>
-                                   <p>I have a draft poster for a campus community event and want sharper hierarchy,
-                                        spacing, and CTA copy.</p>
-                                   <div class="tag-row"><span class="tag">Figma</span><span
-                                             class="tag">Poster</span><span class="tag">Design Review</span></div>
-                                   <div class="list-item" style="padding-bottom:0;border-bottom:0;">
-                                        <div>
-                                             <strong>Ayesha Khan</strong>
-                                             <p>Lahore • 1 helper interested</p>
-                                        </div>
-                                        <a class="btn btn-secondary" href="./request-2.html">Open
-                                             details</a>
-                                   </div>
-                              </article>
-
-                              <article class="card-request fade-in">
-                                   <div class="card-somedetails">
-                                        <span class="tag">Career</span>
-                                        <span class="tag ">Low</span>
-                                        <span class="tag green">Solved</span>
-                                   </div>
-                                   <h3>Need mock interview support for internship applications</h3>
-                                   <p>Applying to frontend internships and need someone to practice behavioral and
-                                        technical interview questions with me.</p>
-                                   <div class="tag-row"><span class="tag">Interview Prep</span><span
-                                             class="tag">Career</span><span class="tag">Frontend</span></div>
-                                   <div class="list-item" style="padding-bottom:0;border-bottom:0;">
-                                        <div>
-                                             <strong>Sara Noor</strong>
-                                             <p>Remote • 2 helpers interested</p>
-                                        </div>
-                                        <a class="btn btn-secondary" href="./request-3.html">Open
-                                             details</a>
-                                   </div>
-                              </article>
-                         </div>
-                    </div>
-                    <div class="cards">
-                         <div class="area">
-                              <p class="core">AI insights</p>
-                              <h3>Suggested actions for you</h3>
-                              <div data-dashboard-ai="">
-                                   <div class="metric"><span>Most requested category</span><strong>Web
-                                             Development</strong></div>
-                                   <div class="metric"><span>Your strongest trust driver</span><strong>Design
-                                             Ally</strong></div>
-                                   <div class="metric"><span>AI says you can mentor in</span><strong>HTML/CSS, UI/UX,
-                                             Career Guidance, Figma</strong></div>
-                                   <div class="metric"><span>Your active requests</span><strong>1</strong></div>
+                         <div class="cards">
+                              <div><strong>Skills</strong>
+                                   <div class="tag-row" data-profile-skills="" style="margin-top:10px;"><span
+                                             class="tag">Figma</span><span class="tag">UI/UX</span><span
+                                             class="tag">HTML/CSS</span><span class="tag">Career Guidance</span></div>
                               </div>
-                         </div>
-                         <div class="area">
-                              <p class="core">Notifications</p>
-                              <h3>Latest updates</h3>
-                              <div class="notif-list" data-dashboard-notes="">
-                                   <div class="notif-item">
-                                        <div><strong>New helper matched to your responsive portfolio request</strong>
-                                             <p>Match • 12 min ago</p>
-                                        </div><span class="tag red">Unread</span>
-                                   </div>
-
-                                   <div class="notif-item">
-                                        <div><strong>Your trust score increased after a solved request</strong>
-                                             <p>Reputation • 1 hr ago</p>
-                                        </div><span class="tag red">Unread</span>
-                                   </div>
-
-                                   <div class="notif-item">
-                                        <div><strong>AI Center detected rising demand for interview prep</strong>
-                                             <p>Insight • Today</p>
-                                        </div><span class="tag ">Read</span>
-                                   </div>
+                              <div><strong>Badges</strong>
+                                   <div class="tag-row" data-profile-badges="" style="margin-top:10px;"><span
+                                             class="tag">Design Ally</span><span class="tag">Fast Responder</span><span
+                                             class="tag">Top Mentor</span></div>
                               </div>
                          </div>
                     </div>
-               </section>
-          </main>
-     </div>
+               </div>
+               <form class="form-card cards" data-profile-form="">
+                    <p class="core">Edit profile</p>
+                    <h2>Update your identity</h2>
+                    <div class="profile-form">
+                         <div class="field"><label>Name</label><input name="name" type="text"></div>
+                         <div class="field"><label>Location</label><input name="location" type="text"></div>
+                         <div class="field-full"><label>Skills</label><input name="skills" type="text"></div>
+                         <div class="field-full"><label>Interests</label><input name="interests" type="text"></div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Save profile</button>
+               </form>
+          </section>
+     </main>
 
 
 </body>
