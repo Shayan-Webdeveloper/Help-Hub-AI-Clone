@@ -167,6 +167,9 @@ textarea {
 .btn:hover {
   transform: translateY(-2px);
 }
+.detail {
+     width: 50%;
+}
 .btn-primary {
   background: linear-gradient(135deg, var(--primary) 0%, #14b8a6 100%);
   color: white;
@@ -615,5 +618,17 @@ textarea:focus {
   }
   h1 {
     font-size: 2.6rem;
+  }
+  .btn{
+     padding: 10px !important;
+     width: 40% !important;
+  }
+  .btn-primary{
+     padding: 10px !important;
+     width: 50% !important;
+  }
+  .nav-actions{
+     width: 100%;
+     margin: auto;
   }
 }
